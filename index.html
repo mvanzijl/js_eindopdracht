@@ -1,0 +1,44 @@
+<!--        html        -->
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>KleurenToggle</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="site" onkeydown="keyCode(event)">
+
+	<nav class="nav-main">
+		<div class="btn-toggle-nav" onmouseover="toggleNav()"></div>
+		<div class="colorText">KleurenToggle</div>
+	</nav>
+
+	<aside class="nav-sidebar">
+		<ul>
+			<li id="grey" onclick="changeBackground('grey')"><span>Home</span></li>
+			<li id="red" onclick="changeBackground('red')"><span>Red</span></li>
+			<li id="orange" onclick="changeBackground('orange')"><span>Orange</span></li>
+			<li id="purple" onclick="changeBackground('purple')"><span>Purlple</span></li>
+			<li id="green" onclick="changeBackground('green')"><span>Green</span></li>
+		</ul>
+	</aside>
+
+	<div class="radiomenu">
+		<p>
+		Color:
+		</p>
+		<input type="radio" id="greyRadio" class="radio" onclick="changeRadio('grey')">
+		<label for="grey">Grey</label><br>
+		<input type="radio" id="redRadio" class="radio" onclick="changeRadio('red')">
+		<label for="red">Red</label><br>
+		<input type="radio" id="orangeRadio" class="radio" onclick="changeRadio('orange')">
+		<label for="orange">Orange</label><br>
+		<input type="radio" id="purpleRadio" class="radio" onclick="changeRadio('purple')">
+		<label for="purple">Purple</label><br>
+		<input type="radio" id="greenRadio" class="radio" onclick="changeRadio('green')">
+		<label for="green">Green</label><br>
+	</div>
+<script src="script.js"></script> 
+
+</body>
+</html>
